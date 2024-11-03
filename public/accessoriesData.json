@@ -1,0 +1,70 @@
+[
+    {
+        "product-id": "ACC001",
+        "product-img": "https://i.ibb.co.com/X7HkDqd/logitech-g304-wireless-gaming-mouse-white-1-1000x1000-jpg-1000x1000.jpg",
+        "product-title": "Logitech Wireless Mouse",
+        "category": "Accessory",
+        "price": 1500,
+        "description": "Logitech M235 Wireless Mouse with ergonomic design, compatible with Windows and macOS.",
+        "specification": [
+            "2.4 GHz Wireless Technology",
+            "Optical Sensor",
+            "Ergonomic Design",
+            "Battery Life: 12 months",
+            "Compatible with Windows and macOS"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product-id": "ACC002",
+        "product-img": "https://i.ibb.co.com/p2NStyh/jbl-flip-6-portable-bluetooth-speaker-2.jpg",
+        "product-title": "JBL Portable Bluetooth Speaker",
+        "category": "Accessory",
+        "price": 3500,
+        "description": "JBL Go 3 Portable Bluetooth Speaker with IP67 waterproof rating and 5-hour battery life.",
+        "specification": [
+            "Bluetooth 5.1",
+            "5-hour Battery Life",
+            "IP67 Waterproof and Dustproof",
+            "Integrated Speakerphone",
+            "Available in Multiple Colors"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product-id": "ACC003",
+        "product-img": "https://i.ibb.co.com/Y2g1DGC/Anker-Power-Core-Slim-10000m-Ah-PD-Power-Bank-1.jpg",
+        "product-title": "Anker PowerCore 10000mAh Power Bank",
+        "category": "Accessory",
+        "price": 2200,
+        "description": "Anker PowerCore 10000mAh compact power bank with fast charging technology and multi-protection system.",
+        "specification": [
+            "10000mAh Capacity",
+            "PowerIQ and VoltageBoost Technology",
+            "MultiProtect Safety System",
+            "Ultra-Compact Design",
+            "Compatible with Smartphones and Tablets"
+        ],
+        "availability": false,
+        "rating": 4.6
+    },
+    {
+        "product-id": "ACC004",
+        "product-img": "https://i.ibb.co.com/sP8YXP8/wh-xb-910-n.jpg",
+        "product-title": "Sony WH-1000XM4 Wireless Headphones",
+        "category": "Accessory",
+        "price": 29000,
+        "description": "Sony WH-1000XM4 with industry-leading noise cancellation, 30-hour battery life, and touch controls.",
+        "specification": [
+            "Industry-Leading Noise Cancellation",
+            "30-hour Battery Life",
+            "Touch Sensor Controls",
+            "Adaptive Sound Control",
+            "Compatible with Voice Assistants"
+        ],
+        "availability": true,
+        "rating": 4.8
+    }
+]
