@@ -6,7 +6,7 @@ const Banner = () => {
         <h2 className="text-5xl font-bold text-white md:w-[70%] leading-tight">
           Upgrade Your Tech Accessorize with Gadget Heaven Accessories
         </h2>
-        <p className="text-white font-medium md:w-[60%]">
+        <p className="text-white font-medium md:w-[50%]">
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>

@@ -1,8 +1,8 @@
 [
     {
-        "product-id": "LAP001",
-        "product-img": "https://i.ibb.co.com/4s0mdTR/3520-core-i7.jpg",
-        "product-title": "Dell Inspiron 15",
+        "id": "LAP001",
+        "image": "https://i.ibb.co.com/HDPnZy4/s-l1600-1.webp",
+        "title": "Dell Inspiron 15",
         "category": "Laptop",
         "price": 55000,
         "description": "Dell Inspiron 15 with Intel i5 processor, 8GB RAM, and 512GB SSD.",
@@ -18,9 +18,9 @@
         "rating": 4.5
     },
     {
-        "product-id": "LAP002",
-        "product-img": "https://i.ibb.co.com/c2XLz71/s-l1600.webp",
-        "product-title": "HP Pavilion x360",
+        "id": "LAP002",
+        "image": "https://i.ibb.co.com/VCw7drj/5cb37565-3de5-40d1-abec-9c60fd7e448e-3df82affe7965ff746729f95780d8e92.webp",
+        "title": "HP Pavilion x360",
         "category": "Laptop",
         "price": 62000,
         "description": "HP Pavilion x360 with Intel i5 processor, 16GB RAM, and 256GB SSD.",
@@ -36,9 +36,9 @@
         "rating": 4.3
     },
     {
-        "product-id": "LAP003",
-        "product-img": "https://i.ibb.co.com/WgkgtQ0/air-m1-gray-1.jpg",
-        "product-title": "MacBook Air M1",
+        "id": "LAP003",
+        "image": "https://i.ibb.co.com/WgkgtQ0/air-m1-gray-1.jpg",
+        "title": "MacBook Air M1",
         "category": "Laptop",
         "price": 92000,
         "description": "Apple MacBook Air with M1 chip, 8GB RAM, and 256GB SSD.",
@@ -54,9 +54,9 @@
         "rating": 4.8
     },
     {
-        "product-id": "LAP004",
-        "product-img": "https://i.ibb.co.com/61qMHzc/2-550x550-png.webp",
-        "product-title": "Lenovo IdeaPad 3",
+        "id": "LAP004",
+        "image": "https://i.ibb.co.com/61qMHzc/2-550x550-png.webp",
+        "title": "Lenovo IdeaPad 3",
         "category": "Laptop",
         "price": 48000,
         "description": "Lenovo IdeaPad 3 with AMD Ryzen 5 processor, 8GB RAM, and 1TB HDD.",
@@ -72,9 +72,9 @@
         "rating": 4.0
     },
     {
-        "product-id": "LAP005",
-        "product-img": "https://example.com/images/laptop5.jpg",
-        "product-title": "Acer Aspire 5",
+        "id": "LAP005",
+        "image": "https://i.ibb.co.com/s5DpdRM/ACER-ASPIRE-5-A515-58-GM-74-CC-3.jpg",
+        "title": "Acer Aspire 5",
         "category": "Laptop",
         "price": 53000,
         "description": "Acer Aspire 5 with Intel i5 processor, 8GB RAM, and 512GB SSD.",
@@ -90,9 +90,9 @@
         "rating": 4.2
     },
     {
-        "product-id": "LAP006",
-        "product-img": "https://i.ibb.co.com/Smf2MYj/88900-vivobook-14-gen-z-2-600x600.webp",
-        "product-title": "Asus VivoBook 14",
+        "id": "LAP006",
+        "image": "https://i.ibb.co.com/Smf2MYj/88900-vivobook-14-gen-z-2-600x600.webp",
+        "title": "Asus VivoBook 14",
         "category": "Laptop",
         "price": 45000,
         "description": "Asus VivoBook 14 with Intel i3 processor, 8GB RAM, and 256GB SSD.",
@@ -108,9 +108,9 @@
         "rating": 4.1
     },
     {
-        "product-id": "LAP007",
-        "product-img": "https://i.ibb.co.com/3NhDJLq/microsoft-surface-laptop-go-3-intel-core-i5-1235u-11704361278.webp",
-        "product-title": "Microsoft Surface Laptop Go",
+        "id": "LAP007",
+        "image": "https://i.ibb.co.com/3NhDJLq/microsoft-surface-laptop-go-3-intel-core-i5-1235u-11704361278.webp",
+        "title": "Surface Laptop Go",
         "category": "Laptop",
         "price": 68000,
         "description": "Microsoft Surface Laptop Go with Intel i5 processor, 8GB RAM, and 128GB SSD.",
@@ -126,9 +126,9 @@
         "rating": 4.3
     },
     {
-        "product-id": "LAP008",
-        "product-img": "https://i.ibb.co.com/ZM8VmzL/download.jpg",
-        "product-title": "Lenovo ThinkPad E14",
+        "id": "LAP008",
+        "image": "https://i.ibb.co.com/M8T3gY9/thinkpad-e14-gen-5-01-500x500.webp",
+        "title": "Lenovo ThinkPad E14",
         "category": "Laptop",
         "price": 74000,
         "description": "Lenovo ThinkPad E14 with AMD Ryzen 7 processor, 16GB RAM, and 512GB SSD.",
@@ -144,9 +144,9 @@
         "rating": 4.6
     },
     {
-        "product-id": "PHN001",
-        "product-img": "https://i.ibb.co.com/C5RgCM1/br-galaxy-s21-5g-g991-sm-g991bzvjzto-368318799.jpg",
-        "product-title": "Samsung Galaxy S21",
+        "id": "PHN001",
+        "image": "https://i.ibb.co.com/C5RgCM1/br-galaxy-s21-5g-g991-sm-g991bzvjzto-368318799.jpg",
+        "title": "Samsung Galaxy S21",
         "category": "Phone",
         "price": 70000,
         "description": "Samsung Galaxy S21 with Exynos 2100 processor, 8GB RAM, and 128GB storage.",
@@ -163,9 +163,9 @@
         "rating": 4.7
     },
     {
-        "product-id": "PHN002",
-        "product-img": "https://i.ibb.co.com/HxS4hJT/i-Phone-13-Pink-PDP-Image-position-1-A-CLCO-v1.webp",
-        "product-title": "iPhone 13",
+        "id": "PHN002",
+        "image": "https://i.ibb.co.com/HxS4hJT/i-Phone-13-Pink-PDP-Image-position-1-A-CLCO-v1.webp",
+        "title": "iPhone 13",
         "category": "Phone",
         "price": 80000,
         "description": "Apple iPhone 13 with A15 Bionic chip, 4GB RAM, and 128GB storage.",
@@ -182,9 +182,9 @@
         "rating": 4.8
     },
     {
-        "product-id": "PHN003",
-        "product-img": "https://i.ibb.co.com/t3BN4KM/One-Plus-9-Pro-Review-02-1920x1080.jpg",
-        "product-title": "OnePlus 9",
+        "id": "PHN003",
+        "image": "https://i.ibb.co.com/t3BN4KM/One-Plus-9-Pro-Review-02-1920x1080.jpg",
+        "title": "OnePlus 9",
         "category": "Phone",
         "price": 65000,
         "description": "OnePlus 9 with Snapdragon 888 processor, 8GB RAM, and 128GB storage.",
@@ -201,9 +201,9 @@
         "rating": 4.5
     },
     {
-        "product-id": "PHN004",
-        "product-img": "https://i.ibb.co.com/c8xK6MT/Xiaomi-14.webp",
-        "product-title": "Xiaomi Mi 11",
+        "id": "PHN004",
+        "image": "https://i.ibb.co.com/c8xK6MT/Xiaomi-14.webp",
+        "title": "Xiaomi Mi 11",
         "category": "Phone",
         "price": 60000,
         "description": "Xiaomi Mi 11 with Snapdragon 888 processor, 8GB RAM, and 256GB storage.",
@@ -220,9 +220,9 @@
         "rating": 4.4
     },
     {
-        "product-id": "PHN005",
-        "product-img": "https://i.ibb.co.com/YD1cVr2/Pixel-6-Pro-600x600.jpg",
-        "product-title": "Google Pixel 6",
+        "id": "PHN005",
+        "image": "https://i.ibb.co.com/YD1cVr2/Pixel-6-Pro-600x600.jpg",
+        "title": "Google Pixel 6",
         "category": "Phone",
         "price": 72000,
         "description": "Google Pixel 6 with Google Tensor processor, 8GB RAM, and 128GB storage.",
@@ -239,9 +239,9 @@
         "rating": 4.6
     },
     {
-        "product-id": "PHN006",
-        "product-img": "https://i.ibb.co.com/Q8ZbyPL/618-YKPu-Fl-TL-SX522.jpg",
-        "product-title": "Oppo Reno6 Pro",
+        "id": "PHN006",
+        "image": "https://i.ibb.co.com/Q8ZbyPL/618-YKPu-Fl-TL-SX522.jpg",
+        "title": "Oppo Reno6 Pro",
         "category": "Phone",
         "price": 50000,
         "description": "Oppo Reno6 Pro with MediaTek Dimensity 1200 processor, 12GB RAM, and 256GB storage.",
@@ -258,9 +258,9 @@
         "rating": 4.3
     },
     {
-        "product-id": "ACC001",
-        "product-img": "https://i.ibb.co.com/X7HkDqd/logitech-g304-wireless-gaming-mouse-white-1-1000x1000-jpg-1000x1000.jpg",
-        "product-title": "Logitech Wireless Mouse",
+        "id": "ACC001",
+        "image": "https://i.ibb.co.com/X7HkDqd/logitech-g304-wireless-gaming-mouse-white-1-1000x1000-jpg-1000x1000.jpg",
+        "title": "Wireless Mouse",
         "category": "Accessory",
         "price": 1500,
         "description": "Logitech M235 Wireless Mouse with ergonomic design, compatible with Windows and macOS.",
@@ -275,9 +275,9 @@
         "rating": 4.5
     },
     {
-        "product-id": "ACC002",
-        "product-img": "https://i.ibb.co.com/p2NStyh/jbl-flip-6-portable-bluetooth-speaker-2.jpg",
-        "product-title": "JBL Portable Bluetooth Speaker",
+        "id": "ACC002",
+        "image": "https://i.ibb.co.com/4TqMqvd/jbl-flip-6-portable-bluetooth-speaker.jpg",
+        "title": "JBL Portable Bluetooth Speaker",
         "category": "Accessory",
         "price": 3500,
         "description": "JBL Go 3 Portable Bluetooth Speaker with IP67 waterproof rating and 5-hour battery life.",
@@ -292,9 +292,9 @@
         "rating": 4.7
     },
     {
-        "product-id": "ACC003",
-        "product-img": "https://i.ibb.co.com/Y2g1DGC/Anker-Power-Core-Slim-10000m-Ah-PD-Power-Bank-1.jpg",
-        "product-title": "Anker PowerCore 10000mAh Power Bank",
+        "id": "ACC003",
+        "image": "https://i.ibb.co.com/Y2g1DGC/Anker-Power-Core-Slim-10000m-Ah-PD-Power-Bank-1.jpg",
+        "title": "Anker PowerCore 10000mAh Power Bank",
         "category": "Accessory",
         "price": 2200,
         "description": "Anker PowerCore 10000mAh compact power bank with fast charging technology and multi-protection system.",
@@ -309,9 +309,9 @@
         "rating": 4.6
     },
     {
-        "product-id": "ACC004",
-        "product-img": "https://i.ibb.co.com/sP8YXP8/wh-xb-910-n.jpg",
-        "product-title": "Sony WH-1000XM4 Wireless Headphones",
+        "id": "ACC004",
+        "image": "https://i.ibb.co.com/sP8YXP8/wh-xb-910-n.jpg",
+        "title": "Sony WH-1000XM4 Wireless Headphones",
         "category": "Accessory",
         "price": 29000,
         "description": "Sony WH-1000XM4 with industry-leading noise cancellation, 30-hour battery life, and touch controls.",
@@ -326,3 +326,4 @@
         "rating": 4.8
     }
 ]
+   
