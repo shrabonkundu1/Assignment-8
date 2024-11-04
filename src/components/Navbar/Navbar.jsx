@@ -15,7 +15,9 @@ const Navbar = () => {
       case '/dashboard':
         return {backgroundColor:'white',color: 'black'};
       case '/statistics':
-        return {backgroundColor:'white',color: 'black'}
+        return {backgroundColor:'white',color: 'black'};
+      // case '/':
+      //   return {backgroundColor:'white',color: 'black'};
     }
   } ;
 

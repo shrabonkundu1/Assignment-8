@@ -17,7 +17,7 @@ const Gadgets = () => {
       .then((data) => setCategorys(data));
   }, []);
   return (
-    <div className="w-[85%] mx-auto md:mb-24 mb-8">
+    <div className="mx-auto md:mb-24 mb-8">
       <h2 className="text-center text-4xl font-semibold mb-16">Explore Cutting-Edge Gadgets</h2>
       <section className=" grid grid-cols-1 md:grid-cols-5 gap-10">
         <div className="col-span-1  rounded-xl ">
