@@ -1,7 +1,7 @@
 import bannerImg from "../../assets/image/banner.jpg"
 const Banner = () => {
   return (
-    <div className="relative mb-[500px]">
+    <div className="relative md:mb-[450px]">
       <div className="text-center flex flex-col items-center justify-center space-y-8 rounded-b-xl pt-20 bg-[#9538e2] pb-56">
         <h2 className="text-5xl font-bold text-white md:w-[70%] leading-tight">
           Upgrade Your Tech Accessorize with Gadget Heaven Accessories
