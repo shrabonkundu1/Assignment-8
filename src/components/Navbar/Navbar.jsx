@@ -1,24 +1,46 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import addToCart from "../../assets/image/add-to-cart.png"
+import whichList from "../../assets/image/love.png"
 
 const Navbar = () => {
 
+
+  const location = useLocation();
+
+  const navbar = ()=> {
+    switch (location.pathname){
+      default:
+          // return {backgroundColor:'[#9538e2]'};
+          return {backgroundColor:'blueviolet'};
+      case '/dashboard':
+        return {backgroundColor:'white',color: 'black'};
+      case '/statistics':
+        return {backgroundColor:'white',color: 'black'}
+    }
+  } ;
+
+
+
+
     const links = <>
          <li>
-              <NavLink to= "/">Home</NavLink>
+              <NavLink to= "/" className={({isActive}) => `${isActive? "bg-white text-[#9538e2] py-2 px-4 rounded-lg font-semibold" : ""}`}>Home</NavLink>
             </li>
             <li>
-              <NavLink to= "/statistics">Statistics</NavLink>
+              <NavLink to= "/statistics" className={({isActive}) => `${isActive? "bg-[#9538e2] text-white py-2 px-4 rounded-lg font-semibold" : ""}`}>Statistics</NavLink>
             </li>
             <li>
-              <NavLink to= "/dashboard">Dashboard</NavLink>
+              <NavLink to= "/dashboard" className={({isActive}) => `${isActive? "bg-[#9538e2] text-white py-2 px-4 rounded-lg font-semibold" : ""}`}>Dashboard</NavLink>
             </li>
     </>
 
 
 
   return (
-    <div className="navbar bg-base-100">
-      <div className="navbar-start">
+    <div className="">
+      <div className="navbar bg-[#9538e2] rounded-t-xl text-white " style={navbar()}>
+     <div className=" mx-24 navbar  "  >
+     <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -45,16 +67,20 @@ const Navbar = () => {
         </div>
         <a className="cursor-pointer font-bold text-xl">Gadget Heaven</a>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className="navbar-center  ml-48 hidden lg:flex">
+        <ul className="flex gap-8 items-center ">
         {links}
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end gap-6 cursor-pointer w-full h-full">
+        <a className=" w-10 h-10 bg-white border-1 rounded-full p-2"><img src= {addToCart} alt="" /></a>
+        <a className=" w-10 h-10 bg-white border-1 rounded-full p-2"><img src={whichList} alt="" /></a>
       </div>
+     </div>
+    </div>
     </div>
   );
 };
 
 export default Navbar;
+

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Gadget from "../Gadget/Gadget";
 
 
 const Gadgets = () => {
@@ -14,9 +15,9 @@ const Gadgets = () => {
     },[])
     return (
         <div>
-           <p>
-           {gadgets.length}
-           </p>
+           {
+            gadgets.map((gadget,idx) => <Gadget key={idx} gadget={gadget}></Gadget>)
+           }
         </div>
     );
 };

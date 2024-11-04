@@ -1,10 +1,11 @@
+import Banner from "../Banner/Banner";
 import Gadgets from "../Gadgets/Gadgets";
 
 
 const Home = () => {
     return (
-        <div>
-            <h2>Wellcome to Gadget Home Page</h2>
+        <div >
+            <Banner></Banner>
            <Gadgets></Gadgets>
         </div>
     );

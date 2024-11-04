@@ -1,7 +1,7 @@
 [
     {
         "product-id": "LAP001",
-        "product-img": "https://example.com/images/laptop1.jpg",
+        "product-img": "https://i.ibb.co.com/4s0mdTR/3520-core-i7.jpg",
         "product-title": "Dell Inspiron 15",
         "category": "Laptop",
         "price": 55000,
@@ -19,7 +19,7 @@
     },
     {
         "product-id": "LAP002",
-        "product-img": "https://i.ibb.co.com/61qMHzc/2-550x550-png.webp",
+        "product-img": "https://i.ibb.co.com/c2XLz71/s-l1600.webp",
         "product-title": "HP Pavilion x360",
         "category": "Laptop",
         "price": 62000,
@@ -55,7 +55,7 @@
     },
     {
         "product-id": "LAP004",
-        "product-img": "https://example.com/images/laptop4.jpg",
+        "product-img": "https://i.ibb.co.com/61qMHzc/2-550x550-png.webp",
         "product-title": "Lenovo IdeaPad 3",
         "category": "Laptop",
         "price": 48000,
