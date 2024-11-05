@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Gadget from "../Gadget/Gadget";
 import GadgetCategory from "../GadgetCategory/GadgetCategory";
 import { Outlet } from "react-router-dom";
+import Gadgetscard from "../Gadgetscard/Gadgetscard";
+// import Gadgetscard from "../Gadgetscard/Gadgetscard";
 
 const Gadgets = ({categories}) => {
   const [gadgets, setGadgets] = useState([]);
@@ -12,11 +14,11 @@ const Gadgets = ({categories}) => {
       .then((res) => res.json())
       .then((data) => setGadgets(data));
   }, []);
-  useEffect(() => {
-    fetch("/categoryData.json")
-      .then((res) => res.json())
-      .then((data) => setCategorys(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch("/categoryData.json")
+  //     .then((res) => res.json())
+  //     .then((data) => setCategorys(data));
+  // }, []);
   return (
     <div className="mx-auto md:mb-24 mb-8">
       <h2 className="text-center text-4xl font-semibold mb-16">Explore Cutting-Edge Gadgets</h2>
@@ -25,13 +27,12 @@ const Gadgets = ({categories}) => {
 
 
           <GadgetCategory categories={categories}></GadgetCategory>
-           <Outlet></Outlet>
+          
         </div>
 
         <div className="col-span-4 grid-cols-1 grid md:grid-cols-3 gap-5 ">
-          {gadgets.map((gadget, idx) => (
-            <Gadget key={idx} gadget={gadget}></Gadget>
-          ))}
+          {/* <Gadgetscard ></Gadgetscard> */}
+          <Outlet></Outlet>
         </div>
       </section>
     </div>

@@ -6,7 +6,6 @@ import GadgetCategory from "../GadgetCategory/GadgetCategory";
 
 const Home = () => {
     const categories = useLoaderData();
-    console.log(categories)
     return (
         <div >
             <Banner></Banner>
