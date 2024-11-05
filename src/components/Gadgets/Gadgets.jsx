@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import Gadget from "../Gadget/Gadget";
 import GadgetCategory from "../GadgetCategory/GadgetCategory";
+import { Outlet } from "react-router-dom";
 
-const Gadgets = () => {
+const Gadgets = ({categories}) => {
   const [gadgets, setGadgets] = useState([]);
-  const [categorys , setCategorys] = useState([]);
+  // const [categorys , setCategorys] = useState([]);
 
   useEffect(() => {
     fetch("/allData.json")
@@ -21,11 +22,10 @@ const Gadgets = () => {
       <h2 className="text-center text-4xl font-semibold mb-16">Explore Cutting-Edge Gadgets</h2>
       <section className=" grid grid-cols-1 md:grid-cols-5 gap-10">
         <div className="col-span-1  rounded-xl ">
-            <div className="border rounded-xl">
-            {
-                categorys.map((category,idx) => <GadgetCategory key={idx} category={category}></GadgetCategory>)
-            }
-            </div>
+
+
+          <GadgetCategory categories={categories}></GadgetCategory>
+           <Outlet></Outlet>
         </div>
 
         <div className="col-span-4 grid-cols-1 grid md:grid-cols-3 gap-5 ">

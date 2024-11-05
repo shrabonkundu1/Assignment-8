@@ -32,12 +32,12 @@ const GadgetDetail = () => {
             <div className="flex gap-16 flex-col lg:flex-row">
               <img
                 src={productImage}
-                className="w-[420px] h-[500px]  p-5 rounded-lg shadow-2xl"
+                className="w-[420px] h-[500px] bg-slate-500 object-cover  rounded-xl border"
               />
-              <div className="space-y-3">
+              <div className="space-y-3 border rounded-xl p-5 ">
                 <h1 className="text-3xl font-semibold">{productTitle}</h1>
-                <p className="font-semibold text-[18px]">price: {price}Tk</p>
-                <p>{description}</p>
+                <p className="font-semibold text-[18px]">Price: {price}Tk</p>
+                <p className="text-gray-700"><span className="font-medium text-black text-[18opx]">Description:</span> {description}</p>
                 <p className="font-medium ">Specification :</p>
                   <p>{specification}</p>  
                 
