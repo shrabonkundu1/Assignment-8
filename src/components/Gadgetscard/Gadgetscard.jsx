@@ -85,7 +85,7 @@ const Gadgetscard = () => {
                         <ProductCard key={idx} product={product}></ProductCard>
                     ))
                 ) : (
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p className="text-4xl font-semibold text-green-500">No Data Available</p>
                 )
             }
         </div>
