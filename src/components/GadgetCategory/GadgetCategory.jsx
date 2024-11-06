@@ -1,20 +1,42 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
-const GadgetCategory = ({categories}) => {
-    // const {categoryItem} = categories;
-    
+const GadgetCategory = () => {
+   
 
-    return (
-        // <div className="w-[90%] mx-auto">
-        //     <button className="border-2  rounded-full font-semibold text-gray-500 py-3 px-6  w-full text-left my-3 bg-gray-200" >{categoryItem}</button>
+    const [categoryData,setCategoryData] = useState([])
+    useEffect(()=>{
+        fetch('/categoryData.json')
+        .then(res => res.json())
+        .then(data => setCategoryData(data))
+    },[])
 
-           
-        // </div>
-        <div className="w-[90%] mx-auto border p-3">
+    const location = useLocation()
+
+       return(
+        <div className="w-[90%] mx-auto border rounded-xl p-3">
+            <NavLink to={"/category"} >
+                <button className={`border-2  rounded-full font-semibold text-gray-500 py-3 px-6  w-full text-left my-3 bg-gray-200 ${location.pathname === "/category" ? 'bg-[#9538E2] text-white font-semibold' : ""}`}>
+                    All Product
+                </button>
+            </NavLink>
+          
+
             {
-                categories.map((category,idx) => (
-                    <Link className="flex flex-col border-2  rounded-full font-semibold text-gray-500 py-3 px-6  w-full text-left my-3 bg-gray-200" key={idx} to={`/category/${category.categoryItem}`}>{category.categoryItem}</Link>
+                categoryData.map((category,idx)=> (
+                    <NavLink 
                     
+                    key={idx}
+                    to={`/category/${category.categoryItem}`}>
+
+                    {({isActive}) => (
+                        <button className={`border-2  rounded-full font-semibold text-gray-500 py-3 px-6  w-full  my-3 bg-gray-200 ${isActive ? "bg-[#9538E2] text-white font-semibold" : ""}`}>
+                        {category.categoryItem}
+                    </button>
+                    )}
+                    
+                        
+                    </NavLink>
                 ))
             }
         </div>

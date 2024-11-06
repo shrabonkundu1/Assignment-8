@@ -3,22 +3,34 @@ import Gadget from "../Gadget/Gadget";
 import GadgetCategory from "../GadgetCategory/GadgetCategory";
 import { Outlet } from "react-router-dom";
 import Gadgetscard from "../Gadgetscard/Gadgetscard";
+
+
+import { useLoaderData, useParams } from "react-router-dom";
+import ProductCard from "../ProductCard/ProductCard";
+
 // import Gadgetscard from "../Gadgetscard/Gadgetscard";
 
 const Gadgets = ({categories}) => {
-  const [gadgets, setGadgets] = useState([]);
-  // const [categorys , setCategorys] = useState([]);
 
-  useEffect(() => {
-    fetch("/allData.json")
-      .then((res) => res.json())
-      .then((data) => setGadgets(data));
-  }, []);
-  // useEffect(() => {
-  //   fetch("/categoryData.json")
-  //     .then((res) => res.json())
-  //     .then((data) => setCategorys(data));
-  // }, []);
+
+// 
+// const {category}= useParams();
+// const [products, setProducts] = useState([]);
+// useEffect (()=> {
+     
+  
+//   if(category){
+//     const filterByCategory =categories.filter(product => product.category === category);
+//     setProducts(filterByCategory)
+  
+//   }
+//   else{
+//       setProducts(categories)
+//   }
+// },[category,categories])
+
+
+
   return (
     <div className="mx-auto md:mb-24 mb-8">
       <h2 className="text-center text-4xl font-semibold mb-16">Explore Cutting-Edge Gadgets</h2>
@@ -26,13 +38,14 @@ const Gadgets = ({categories}) => {
         <div className="col-span-1  rounded-xl ">
 
 
-          <GadgetCategory categories={categories}></GadgetCategory>
+          <GadgetCategory ></GadgetCategory>
           
         </div>
 
         <div className="col-span-4 grid-cols-1 grid md:grid-cols-3 gap-5 ">
-          {/* <Gadgetscard ></Gadgetscard> */}
-          <Outlet></Outlet>
+          
+        <Gadgetscard categories={categories}></Gadgetscard>
+
         </div>
       </section>
     </div>

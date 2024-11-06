@@ -264,7 +264,7 @@
         "productId": "15",
         "productImage": "https://i.ibb.co.com/X7HkDqd/logitech-g304-wireless-gaming-mouse-white-1-1000x1000-jpg-1000x1000.jpg",
         "productTitle": "Wireless Mouse",
-        "category": "Accessory",
+        "category": "Accessories",
         "price": 1500,
         "description": "Logitech M235 Wireless Mouse with ergonomic design, compatible with Windows and macOS.",
         "specification": [
@@ -281,7 +281,7 @@
         "productId": "16",
         "productImage": "https://i.ibb.co.com/4TqMqvd/jbl-flip-6-portable-bluetooth-speaker.jpg",
         "productTitle": "JBL Portable Bluetooth Speaker",
-        "category": "Accessory",
+        "category": "Accessories",
         "price": 3500,
         "description": "JBL Go 3 Portable Bluetooth Speaker with IP67 waterproof rating and 5-hour battery life.",
         "specification": [
@@ -298,7 +298,7 @@
         "productId": "17",
         "productImage": "https://i.ibb.co.com/Y2g1DGC/Anker-Power-Core-Slim-10000m-Ah-PD-Power-Bank-1.jpg",
         "productTitle": "Anker PowerCore 10000mAh Power Bank",
-        "category": "Accessory",
+        "category": "Accessories",
         "price": 2200,
         "description": "Anker PowerCore 10000mAh compact power bank with fast charging technology and multi-protection system.",
         "specification": [
@@ -315,7 +315,7 @@
         "productId": "18",
         "productImage": "https://i.ibb.co.com/sP8YXP8/wh-xb-910-n.jpg",
         "productTitle": "Sony WH-1000XM4 Wireless Headphones",
-        "category": "Accessory",
+        "category": "Accessories",
         "price": 29000,
         "description": "Sony WH-1000XM4 with industry-leading noise cancellation, 30-hour battery life, and touch controls.",
         "specification": [
