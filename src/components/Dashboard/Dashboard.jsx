@@ -1,5 +1,33 @@
-import settings from "../../assets/image/settings.png"
+import { Outlet, useLoaderData } from "react-router-dom";
+// import settings from "../../assets/image/settings.png"
+import { useEffect, useState } from "react";
+import { getStoredAddToCartList } from "../../utility/addToDb";
+import { NavLink } from "react-router-dom";
 const Dashboard = () => {
+
+
+    const [cartList, setCartList] = useState([]);
+   
+
+    const allData = useLoaderData();
+
+
+    useEffect(()=>{
+        const storeCardList = getStoredAddToCartList();
+        // console.log(storeCardList, allData)
+
+
+
+        const addToCardList = allData.filter(product=> storeCardList.includes(product.productId));
+        
+        setCartList(addToCardList)
+        // console.log(addToCardList)
+        // console.log(cartList)
+    
+    },[])
+
+
+
     return (
         <div>
             <section className="pt-10 pb-16 bg-[#9538e2] space-y-5 md:mb-16 relative">
@@ -10,28 +38,17 @@ const Dashboard = () => {
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>
-        <div className="flex gap-4 justify-center text-white font-semibold">
-        <button className="border rounded-full px-7 py-3">Cart</button>
-        <button className="border rounded-full px-7 py-3">WishList</button>
+        <div className="flex gap-4 justify-center items-center text-white font-semibold">
+        <NavLink to= "/dashboard/cart"  className={({isActive}) => `${isActive? "bg-white text-[#9538e2] py-2 px-4 rounded-lg font-semibold " : "border px-4 py-2 rounded-xl"}`}>Cart</NavLink>
+        <NavLink to= "/dashboard/wishlist" className={({isActive}) => `${isActive? "bg-white text-[#111112] py-2 px-4 rounded-lg font-semibold" : "border px-4 py-2 rounded-xl"}`}>WishList</NavLink>
         </div>
       </section>
 
 
-      <section className="flex justify-between items-center mb-8">
-        <div>
-            <p className="text-2xl font-bold text-left mb-5">Cart</p>
-        </div>
-
-        <div className="flex gap-3 items-center justify-center">
-            <p className="text-3xl font-semibold "> Total cost:</p>
-            <span >
-            <button className="font-semibold text-black bg-[#dfdee0] border border-gray-800 rounded-full px-7 py-3 flex items-center gap-2">Sort by Price  <img className="w-5 h-5" src={settings} alt="" /></button>
-           
-            </span>
-
-            <button className="font-semibold text-white bg-[#9538e2] border rounded-full px-7 py-3">Purchase</button>
-        </div>
-      </section>
+      
+      <div>
+        <Outlet></Outlet>
+      </div>
         </div>
     );
 };

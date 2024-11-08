@@ -1,10 +1,15 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToStoredAddToCartList } from "../../utility/addToDb";
+
+import cartImg from "../../assets/image/add-to-cart.png"
+import wishListimg from "../../assets/image/love.png"
+import { addToStoredWishListProduct } from "../../utility/addToWishListData";
 
 const GadgetDetail = () => {
   const { productId } = useParams();
   const data = useLoaderData();
   const gadget = data.find((gadget) => gadget.productId === productId);
-  console.log(gadget);
+
   const {
     productImage,
     productTitle,
@@ -14,6 +19,15 @@ const GadgetDetail = () => {
     specification,
     rating,
   } = gadget;
+
+
+  const handleAddToCart =(id) =>{
+    addToStoredAddToCartList(id);
+  }
+
+  const handleAddToWhichList = (id)=> {
+    addToStoredWishListProduct(id)
+  }
 
   return (
     <div>
@@ -27,12 +41,12 @@ const GadgetDetail = () => {
         </p>
         
       </section>
-      <div className="border bg-white w-[1050px] h-[450px] p-8 rounded-2xl mx-auto absolute right-40 top-[300px]">
+      <div className="border bg-white w-[1050px]  p-8 rounded-2xl mx-auto absolute right-40 top-[300px]">
           <div className="hero bg-white text-black">
             <div className="flex gap-16 flex-col lg:flex-row">
               <img
                 src={productImage}
-                className="w-[420px] h-[400px] bg-slate-500 object-cover  rounded-xl border"
+                className="w-[420px]  bg-slate-500 object-cover  rounded-xl border"
               />
               <div className="space-y-3 border rounded-xl p-5 ">
                 <h1 className="text-3xl font-semibold">{productTitle}</h1>
@@ -45,7 +59,10 @@ const GadgetDetail = () => {
                   </span>
                 
                  
-                <button className="border-2 bg-white rounded-full font-semibold text-[#9538e2] py-3 px-6 hover:bg-[#9538e2] hover:text-white">Add to cart</button>
+              <div className="flex items-center gap-5">
+              <button onClick={()=>handleAddToCart(productId)} className="border-2 bg-white rounded-full font-semibold text-[#9538e2] py-3 px-6 hover:bg-[#9d4edd] hover:text-white flex items-center gap-2">Add to cart <img className="w-7 h-7" src={cartImg} alt="" /></button>
+              <button onClick={()=>handleAddToWhichList(productId)} className="border p-3 hover:bg-[#9b47df]  rounded-full"><img className="w-7 h-7" src={wishListimg} alt="" /></button>
+              </div>
               </div>
             </div>
           </div>

@@ -65,6 +65,7 @@ import { useEffect, useState } from "react";
 
 const Gadgetscard = () => {
     const { category } = useParams();
+    // console.log(category)
     const [products, setProducts] = useState([]);
     const categories = useLoaderData();
 
@@ -76,6 +77,7 @@ const Gadgetscard = () => {
             setProducts(categories);
         }
     }, [category, categories]);
+
 
     return (
         <div className="col-span-4 grid-cols-1 grid md:grid-cols-3 gap-5">

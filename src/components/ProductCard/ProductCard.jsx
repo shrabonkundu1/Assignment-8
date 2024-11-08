@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 
 const ProductCard = ({product}) => {
+
     const { productImage, productTitle, price,productId } = product;
+    
     return (
         <div className="">
              <div className="card  shadow-xl">
