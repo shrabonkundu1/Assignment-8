@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import settings from "../../assets/image/settings.png"
-import {  getStoredAddToCartList } from "../../utility/addToDb";
+import {  getStoredAddToCartList, removeProduct } from "../../utility/addToDb";
 import GadgetCart from "./GadgetCart";
 import ProductCard from "../ProductCard/ProductCard";
-import { useLoaderData, useLocation } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 const Cart = () => {
 
     
@@ -19,7 +19,14 @@ const Cart = () => {
         const addToCardList = allData.filter(cart => gadgets.includes(cart.productId));
         setCartList (addToCardList)
     },[])
-    console.log(cartList)
+    console.log(cartList);
+
+    const handleRemoveProduct = id => {
+        removeProduct(id)
+        const gadgets = getStoredAddToCartList()
+        const addToCardList = allData.filter(cart => gadgets.includes(cart.productId));
+        setCartList (addToCardList)
+    }
 
 
 
@@ -44,15 +51,10 @@ const Cart = () => {
 
       <section>
        { cartList.map((product,idx)=> (
-        <GadgetCart key={idx} product={product}></GadgetCart>
+        <GadgetCart handleRemoveProduct={handleRemoveProduct} key={idx} product={product}></GadgetCart>
        ))}
 
 
-       {/* {
-        cartList.map((product, idx) => (
-            <ProductCard key={idx} product={product}></ProductCard>
-        ))
-       } */}
       </section>
         </div>
     );

@@ -1,24 +1,25 @@
-import { useLoaderData, useParams } from "react-router-dom";
-import { addToStoredAddToCartList } from "../../utility/addToDb";
+// import { useLoaderData, useParams } from "react-router-dom";
+// import { addToStoredAddToCartList } from "../../utility/addToDb";
 
-import cartImg from "../../assets/image/add-to-cart.png"
-import wishListimg from "../../assets/image/love.png"
-import { addToStoredWishListProduct } from "../../utility/addToWishListData";
+// import cartImg from "../../assets/image/add-to-cart.png"
+// import wishListimg from "../../assets/image/love.png"
+// import { addToStoredWishListProduct } from "../../utility/addToWishListData";
+import { Helmet } from "react-helmet-async";
 
 const GadgetDetail = () => {
   const { productId } = useParams();
-  const data = useLoaderData();
-  const gadget = data.find((gadget) => gadget.productId === productId);
+  // const data = useLoaderData();
+  // const gadget = data.find((gadget) => gadget.productId === productId);
 
-  const {
-    productImage,
-    productTitle,
-    price,
-    availability,
-    description,
-    specification,
-    rating,
-  } = gadget;
+  // const {
+  //   productImage,
+  //   productTitle,
+  //   price,
+  //   availability,
+  //   description,
+  //   specification,
+  //   rating,
+  // } = gadget;
 
 
   const handleAddToCart =(id) =>{
@@ -31,6 +32,11 @@ const GadgetDetail = () => {
 
   return (
     <div>
+      {/* <Helmet>
+        <title>
+          Gadgets | {productId}
+        </title>
+      </Helmet> */}
       <section className="pt-10 pb-72 bg-[#9538e2] space-y-5 md:mb-[450px] relative">
         <h2 className="text-3xl text-center font-bold text-white">
           Product Details

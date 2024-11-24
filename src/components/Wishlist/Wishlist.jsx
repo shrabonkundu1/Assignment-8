@@ -1,5 +1,5 @@
 import settings from "../../assets/image/settings.png"
-import { getStoredWhichListProduct } from "../../utility/addToWishListData";
+import { getStoredWishListProduct ,removeWishList} from "../../utility/addToWishListData";
 import GadgetCart from "../Cart/GadgetCart";
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
@@ -7,16 +7,25 @@ const Wishlist = () => {
 
 
 
-    const [cartList,setCartList] = useState([]);
+    const [wishList,setWishList] = useState([]);
     const allData = useLoaderData();
 
 
     useEffect(()=>{
-        const gadgets = getStoredWhichListProduct()
-        const addToCardList = allData.filter(cart => gadgets.includes(cart.productId));
-        setCartList (addToCardList)
+        const gadgets = getStoredWishListProduct()
+        const addToWhichList = allData.filter(cart => gadgets.includes(cart.productId));
+        setWishList (addToWhichList)
     },[])
-    console.log(cartList)
+    console.log(wishList)
+
+
+    const handleRemoveWishList = id => {
+        removeWishList(id);
+        
+        const gadgets = getStoredWishListProduct()
+        const addToWhichList = allData.filter(cart => gadgets.includes(cart.productId));
+        setWishList (addToWhichList)
+    }
 
 
 
@@ -40,8 +49,8 @@ const Wishlist = () => {
 
 
       <section>
-       { cartList.map((product,idx)=> (
-        <GadgetCart key={idx} product={product}></GadgetCart>
+       { wishList.map((product,idx)=> (
+        <GadgetCart  handleRemoveWishList={handleRemoveWishList} key={idx} product={product}></GadgetCart>
        ))}
 
 

@@ -10,6 +10,7 @@ const GadgetCategory = () => {
         .then(res => res.json())
         .then(data => setCategoryData(data))
     },[])
+    
 
     const location = useLocation()
 
@@ -24,6 +25,7 @@ const GadgetCategory = () => {
 
             {
                 categoryData.map((category,idx)=> (
+                    
                     <NavLink 
                     
                     key={idx}
@@ -42,5 +44,6 @@ const GadgetCategory = () => {
         </div>
     );
 };
+
 
 export default GadgetCategory;

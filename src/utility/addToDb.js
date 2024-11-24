@@ -1,3 +1,4 @@
+
 import { toast } from "react-toastify";
 
 
@@ -20,6 +21,16 @@ const addToStoredAddToCartList = (id) => {
         const storedListStr = JSON.stringify(storedList);
         localStorage.setItem('card-list' , storedListStr)
         toast.success('This Product Added to your Cart list')
+    }
+
+
+
+    const removeProduct = id => {
+        console.log(id)
+        const storedList = getStoredAddToCartList();
+        const remaining = storedList.filter(product => product != id)
+        localStorage.setItem('card-list' ,JSON.stringify(remaining))
+        toast.success('Removed Successfully')
     }
 
 
@@ -51,4 +62,4 @@ const addToStoredAddToCartList = (id) => {
 //         localStorage.setItem('wish-list',storedListStr)
 //     }
 // }
-export {addToStoredAddToCartList, getStoredAddToCartList}
+export {addToStoredAddToCartList, getStoredAddToCartList ,removeProduct}
