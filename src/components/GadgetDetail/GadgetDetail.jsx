@@ -32,11 +32,11 @@ const GadgetDetail = () => {
 
   return (
     <div>
-      {/* <Helmet>
+      <Helmet>
         <title>
           Gadgets | {productId}
         </title>
-      </Helmet> */}
+      </Helmet>
       <section className="pt-10 pb-72 bg-[#9538e2] space-y-5 md:mb-[450px] relative">
         <h2 className="text-3xl text-center font-bold text-white">
           Product Details

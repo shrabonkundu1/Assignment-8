@@ -62,4 +62,8 @@ const addToStoredAddToCartList = (id) => {
 //         localStorage.setItem('wish-list',storedListStr)
 //     }
 // }
-export {addToStoredAddToCartList, getStoredAddToCartList ,removeProduct}
+
+ const clearCart = () => {
+    localStorage.removeItem("card-list");
+  };
+export {addToStoredAddToCartList, getStoredAddToCartList ,removeProduct,clearCart}

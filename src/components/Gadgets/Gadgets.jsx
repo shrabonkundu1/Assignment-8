@@ -1,34 +1,11 @@
-import { useEffect, useState } from "react";
-import Gadget from "../Gadget/Gadget";
+
 import GadgetCategory from "../GadgetCategory/GadgetCategory";
-import { Outlet } from "react-router-dom";
 import Gadgetscard from "../Gadgetscard/Gadgetscard";
 
-
-import { useLoaderData, useParams } from "react-router-dom";
-import ProductCard from "../ProductCard/ProductCard";
 
 // import Gadgetscard from "../Gadgetscard/Gadgetscard";
 
 const Gadgets = ({categories}) => {
-
-
-// 
-// const {category}= useParams();
-// const [products, setProducts] = useState([]);
-// useEffect (()=> {
-     
-  
-//   if(category){
-//     const filterByCategory =categories.filter(product => product.category === category);
-//     setProducts(filterByCategory)
-  
-//   }
-//   else{
-//       setProducts(categories)
-//   }
-// },[category,categories])
-
 
 
   return (
