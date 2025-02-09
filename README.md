@@ -1,8 +1,14 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Gadget-Heaven
 
-Currently, two official plugins are available:
+ 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+### Live link🔗: Gadget-Heaven_app.surge.sh
+
+
+
+###  📝 Project Overview:
+Gadget Heaven is a modern MERN stack e-commerce website where users can browse, order, and review various electronic gadgets. The platform includes user authentication with email/password and social login options (Google/GitHub). Users can explore different product categories, view detailed product pages, and add items to their cart or wishlist. The system features order management for both users and admins, allowing seamless tracking of purchases. Additionally, users can rate and review products. An admin dashboard enables product management, including adding, updating, and deleting items. The website is built with React.js (frontend), Node.js & Express.js (backend), MongoDB (database), Firebase/Auth0 (authentication), and optional payment integration (Stripe/SSLCommerz).
+
